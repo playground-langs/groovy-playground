@@ -1,0 +1,18 @@
+repositories{
+    mavenCentral()
+}
+
+dependencies{
+    implementation 'org.apache.groovy:groovy:4.0.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+}
+
+tasks.register("t1"){
+    println "task1 executed"
+}
+
+tasks.register("t2"){
+    doLast{
+        println "task2 executed"
+    }
+}
