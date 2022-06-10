@@ -1,6 +1,6 @@
 package com.techzealot.closure
 /**
- * 闭包委托 闭包内的this
+ * 闭包委托 闭包内的this 类似于kotlin中带有receiver的闭包
  */
 
 def examineClosure(closure) {
