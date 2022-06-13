@@ -33,7 +33,7 @@ println Integer.isEven(3)
  * 注入构造器 <<不能覆盖现有构造器
  */
 Integer.metaClass.constructor << { LocalDateTime date ->
-    Integer.valueOf(date.getDayOfYear())
+    new Integer(date.getDayOfYear())
 }
 
 println new Integer(LocalDateTime.now())
@@ -48,3 +48,5 @@ Integer.metaClass.constructor = { int val ->
 }
 
 println new Integer(10)
+//会调用覆盖的构造器
+println new Integer(LocalDateTime.now())
