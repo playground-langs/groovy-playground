@@ -6,6 +6,9 @@ import org.codehaus.groovy.control.SourceUnit
 import org.codehaus.groovy.transform.ASTTransformation
 import org.codehaus.groovy.transform.GroovyASTTransformation
 
+/**
+ * 需要添加全限定名到META-INF/services/org.codehaus.groovy.transform.ASTTransformation文件
+ */
 @GroovyASTTransformation(phase = CompilePhase.SEMANTIC_ANALYSIS)
 class CodeCheck implements ASTTransformation {
 
